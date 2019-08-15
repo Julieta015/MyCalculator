@@ -6,7 +6,7 @@ function clickHandler() {
   const number1 = Number(numberInputs[0].value);
   const number2 = Number(numberInputs[1].value);
 
-  var result = null;
+  let result = null;
 
   switch (operation.value) {
     case "+":
@@ -23,7 +23,7 @@ function clickHandler() {
       break;
 
     case "**":
-      result = Math.pow(number1, number2);
+      result = number1 ** number2;
       break;
   }
 
